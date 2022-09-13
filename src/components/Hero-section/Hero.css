@@ -1,0 +1,153 @@
+.hero {
+	padding-block: 2em;
+}
+
+.hero-info {
+	width: 50%;
+}
+.hero-info h1 {
+	line-height: 100%;
+	padding-bottom: 0.5em;
+}
+
+.span-primary {
+	color: var(--clr-primary);
+}
+.span-secondary {
+	color: var(--clr-secondary);
+}
+.section-subtitle {
+	font-size: var(--fs-h4);
+	width: 80%;
+	padding-bottom: 1em;
+	color: var(--clr-black-100);
+}
+
+.hero-sub-info {
+	padding-top: 2em;
+}
+
+.hero-sub-card {
+	width: 30%;
+	text-align: center;
+}
+.hero-sub-card h3 {
+	font-size: var(--fs-h3);
+	color: var(--clr-secondary);
+}
+.hero-sub-card h6 {
+	margin: 0;
+	font-size: var(--fs-h5);
+	color: var(--clr-black-100);
+	font-weight: var(--fw-regular);
+}
+
+.hero-content {
+	width: 48%;
+}
+.hero-img {
+	width: 100%;
+	position: relative;
+}
+.hero-img > img {
+	width: 80%;
+	object-fit: cover;
+	margin: 0 auto;
+}
+
+.hero-btn {
+	background-color: var(--clr-secondary);
+	width: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--clr-white);
+	font-size: var(--fs-h4);
+	height: 50px;
+	gap: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	position: absolute;
+	bottom: 100px;
+}
+
+.tick {
+	height: 20px;
+	width: 20px;
+	background-color: transparent;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border: 2px solid var(--clr-white);
+}
+
+.hero-doctor-list {
+	width: 50%;
+
+	text-align: center;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	background-color: var(--clr-white);
+	padding: 0.5em 0;
+
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+}
+.hero-doctor-list p {
+	font-size: var(--fs-h4);
+	padding-bottom: 0.5em;
+}
+.doctor-image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+}
+.bar {
+	width: 80%;
+	background: linear-gradient(
+		90deg,
+		rgba(45, 137, 255, 0.57) 0%,
+		rgba(45, 137, 255, 0) 100%
+	);
+	height: 20px;
+	margin-top: 20px;
+	margin-inline: auto;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+
+@media(max-width:600px){
+    .hero>.container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-info,.hero-content{
+        width: 100%;
+    
+    }
+    .hero-img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero-info>.section-subtitle {
+        width: 100%;
+    }
+    .hero-doctor-list{
+        display: none;
+    }
+    .hero-btn{
+        display: none;
+    }
+}

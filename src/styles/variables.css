@@ -1,0 +1,40 @@
+:root{
+    /* background color list */
+    --bg-clr-primary:#f7f7f7;
+    --bg-clr-blue:#90d4ed;
+    --bg-clr-primary:#eb90ed;
+    /* general color list  */
+
+    --clr-white:#ffff;
+    --clr-primary:#2d89ff;
+    --clr-secondary:#642DFF;
+    --clr-black-900:#1E1E1E;
+    --clr-black-100:#575757;
+
+    /* font family list  */
+
+    --ff-primary:'Inter', sans-serif;
+
+    /* font size list  */
+
+    --fs-h1:60px;
+    --fs-h2:32px;
+    --fs-h3:24px;
+    --fs-h4:16px;
+    --fs-h5:14px;
+    --fs-h6:12px;
+
+
+    /* font weight list  */
+
+    --fw-regular:400;
+    --fw-medium:600;
+    --fw-bold:700;
+    --font-black:900;
+
+    
+
+}
+
+
+

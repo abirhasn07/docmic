@@ -1,0 +1,126 @@
+
+.slider{
+ padding-block: 2em;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider >.container>h2,h6{
+    text-align: center;
+}
+
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: var(--fs-h6);
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  
+
+  .swiper-container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+  }
+  .swiper-container>.slider-info{
+    width: 70%;
+    text-align: left;
+  }
+  .slider-info p{
+    font-size: var(--fs-h5);
+  }
+ 
+  .swiper-container>img{
+    width: 25%;
+    object-fit: contain;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+
+.swiper-button-prev{
+    background-color: var(--bg-clr-blue);
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 100px !important;
+   isolation: isolate;
+}
+.swiper-button-next{
+    background-color: var(--bg-clr-blue);
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    right: 100px !important;
+  isolation: isolate;
+ 
+}
+.swiper-button-next::before{
+    content: "\276F"; 
+    color: var(--clr-white);
+}
+.swiper-button-prev::before{
+    content: "\276E"; 
+    color: var(--clr-white);
+}
+
+
+
+@media(max-width:600px){
+  .swiper-container{
+    width: 100%;
+    flex-direction: column-reverse;
+    height: 60vh;
+    margin-top: 3em;
+    
+  }
+  .swiper-container>.slider-info{
+    width: 90%;
+    text-align: center;
+   
+  }
+  .swiper-container>img{
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+
+  }
+
+  .swiper-button-next{
+    right: 10px !important;
+  }
+  .swiper-button-prev{
+    left: 10px !important;
+  }
+}

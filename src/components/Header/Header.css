@@ -1,0 +1,28 @@
+header{
+    min-height: 80vh;
+    position: relative;
+    background: linear-gradient(180deg,rgb(233, 242, 244),rgba(232, 242, 246, 1));
+    
+}
+.circle{
+    /* background:#90D4ED ;
+    filter: blur(300px);
+    -webkit-filter: blur(300px); */
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+}
+
+.circle-1{
+    left: 0;
+    bottom: 0;
+}
+.circle-2{
+    right: 0;
+    top: 0;
+}
